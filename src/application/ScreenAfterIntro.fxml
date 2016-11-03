@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ScreenAfterIntroController">
+   <children>
+      <Button fx:id="adminMode" layoutX="409.0" layoutY="481.0" mnemonicParsing="false" onAction="#adminMode" prefHeight="54.0" prefWidth="221.0" text="ADMINISTRATION">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="306.0" fitWidth="305.0" layoutX="166.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="350.0">
+         <image>
+            <Image url="@login_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="388.0" fitWidth="305.0" layoutX="710.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="351.0">
+         <image>
+            <Image url="@user-icon-6.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="voterMode" layoutX="752.0" layoutY="481.0" mnemonicParsing="false" onAction="#voterMode" prefHeight="54.0" prefWidth="221.0" text="VOTING">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

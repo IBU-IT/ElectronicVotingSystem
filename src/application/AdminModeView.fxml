@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminModeController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="768.0" prefWidth="1366.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab closable="false" text="Voters">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="737.0" prefWidth="757.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab closable="false" text="Insert Voters">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="245.0">
+                                       <children>
+                                          <TextField fx:id="id" layoutX="305.0" layoutY="385.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <Button fx:id="insert" layoutX="364.0" layoutY="495.0" mnemonicParsing="false" onAction="#onInsertButton" prefHeight="52.0" prefWidth="161.0" text="INSERT VOTER">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></Button>
+                                          <Label layoutX="231.0" layoutY="390.0" text="ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font></Label>
+                                          <TextField fx:id="name" layoutX="305.0" layoutY="248.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <TextField fx:id="lastname" layoutX="305.0" layoutY="317.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <Label layoutX="190.0" layoutY="253.0" text="FIRST NAME">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="192.0" layoutY="322.0" text="LAST NAME">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Delete Voters">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="704.0" prefWidth="761.0" tabClosingPolicy="UNAVAILABLE">
+                                             <tabs>
+                                                <Tab closable="false" text="Delete by Name">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="nametodel" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByName" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeletebyName" prefHeight="52.0" prefWidth="161.0" text="DELETE VOTER">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER NAME TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab closable="false" text="Delete by Last Name">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="lastnametodel" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByLastName" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeletebyLastName" prefHeight="52.0" prefWidth="161.0" text="DELETE VOTER">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER LAST NAME TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab closable="false" text="Delete by ID">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="idtodel" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByID" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeletebyID" prefHeight="52.0" prefWidth="161.0" text="DELETE VOTER">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER ID TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                             </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <TableView fx:id="tableviewVoters" layoutX="772.0" layoutY="100.0" prefHeight="539.0" prefWidth="445.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="772.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="100.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Candidates">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="735.0" prefWidth="754.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Insert Candidates">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="245.0">
+                                       <children>
+                                          <TextField fx:id="id_cand" layoutX="305.0" layoutY="385.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <Button fx:id="insertCand" layoutX="364.0" layoutY="495.0" mnemonicParsing="false" onAction="#OnInsertButtonCand" prefHeight="52.0" prefWidth="161.0" text="INSERT CANDIDATE">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="231.0" layoutY="390.0" text="ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="name_cand" layoutX="305.0" layoutY="248.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <TextField fx:id="lastname_cand" layoutX="305.0" layoutY="317.0" prefHeight="37.0" prefWidth="279.0" />
+                                          <Label layoutX="190.0" layoutY="253.0" text="FIRST NAME">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="192.0" layoutY="322.0" text="LAST NAME">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Delete Candidates">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane prefHeight="705.0" prefWidth="755.0" tabClosingPolicy="UNAVAILABLE">
+                                            <tabs>
+                                              <Tab text="Delete by Name">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="nametodelcand" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByNamecand" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeleteByNameCand" prefHeight="52.0" prefWidth="161.0" text="DELETE CANDIDATE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER NAME TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                              </Tab>
+                                              <Tab text="Delete by Last Name">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="lastnametodelcand" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByLastNamecand" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeleteByLastNameCand" prefHeight="52.0" prefWidth="161.0" text="DELETE CANDIDATE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER LAST NAME TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                              </Tab>
+                                                <Tab text="Delete by ID">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="727.0">
+                                                         <children>
+                                                            <TextField fx:id="idtodelcand" layoutX="356.0" layoutY="263.0" prefHeight="37.0" prefWidth="279.0" />
+                                                            <Button fx:id="deleteByIDcand" layoutX="415.0" layoutY="399.0" mnemonicParsing="false" onAction="#OnDeleteByIDCand" prefHeight="52.0" prefWidth="161.0" text="DELETE CANDIDATE">
+                                                               <font>
+                                                                  <Font size="15.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Label layoutX="105.0" layoutY="268.0" text="ENTER ID TO DELETE">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <TableView fx:id="tableviewCand" prefHeight="539.0" prefWidth="445.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="772.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="100.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="done" layoutX="1188.0" layoutY="695.0" mnemonicParsing="false" onAction="#onDone" prefHeight="38.0" prefWidth="141.0" text="DONE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

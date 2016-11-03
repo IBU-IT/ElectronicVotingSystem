@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VotingModeViewController">
+   <children>
+      <TextField fx:id="lname" editable="false" layoutX="350.0" layoutY="484.0" prefHeight="32.0" prefWidth="278.0" />
+      <Button fx:id="castVote" layoutX="394.0" layoutY="583.0" mnemonicParsing="false" onAction="#onCast" prefHeight="63.0" prefWidth="190.0" text="Cast Vote">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TableView fx:id="tableviewCand" layoutX="863.0" layoutY="76.0" prefHeight="530.0" prefWidth="431.0" />
+      <Label layoutX="58.0" layoutY="48.0" prefHeight="208.0" prefWidth="707.0" text="Dear Voter, Please cast your vote according to&#10; the choices on the table on the right. &#10;Please enter only ID, other fields will fill &#10;automatically if you entered one of the available choices">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="487.0" text="LAST NAME">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="id" layoutX="350.0" layoutY="341.0" onKeyReleased="#RecogniseID" prefHeight="32.0" prefWidth="278.0" />
+      <TextField fx:id="name" editable="false" layoutX="350.0" layoutY="411.0" prefHeight="32.0" prefWidth="278.0" />
+      <Label layoutX="257.0" layoutY="344.0" text="ID">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="414.0" text="FIRST NAME">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="538.0" text="WRONG INPUT. TRY AGAIN" textFill="#ff0101">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

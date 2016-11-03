@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VoterModeViewController">
+   <children>
+      <Label layoutX="198.0" layoutY="174.0" prefHeight="210.0" prefWidth="971.0" text="DEAR VOTER, PLEASE SCAN YOUR PERSONAL IDENTIFICATION DOCUMENT &#10;OR TYPE THE ID NUMBER FOUND ON THE BACK OF YOUR DOCUMENT&#10; " textAlignment="CENTER">
+         <font>
+            <Font size="28.0" />
+         </font></Label>
+      <Button fx:id="goToScan" layoutX="208.0" layoutY="495.0" mnemonicParsing="false" onAction="#OnScanButton" prefHeight="91.0" prefWidth="231.0" text="SCAN  IDENTIFICATION &#10;DOCUMENT" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="goToType" layoutX="957.0" layoutY="495.0" mnemonicParsing="false" onAction="#onTypeButton" prefHeight="91.0" prefWidth="203.0" text="TYPE ID NUMBER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="over" defaultButton="true" layoutX="1210.0" layoutY="30.0" mnemonicParsing="false" onAction="#onOver" prefHeight="29.0" prefWidth="110.0" text="Voting finished?" />
+   </children>
+</AnchorPane>

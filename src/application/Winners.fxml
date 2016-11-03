@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="513.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.WinnersController">
+   <children>
+      <TableView fx:id="tableviewCands" layoutX="51.0" layoutY="47.0" prefHeight="420.0" prefWidth="323.0" />
+   </children>
+</AnchorPane>
